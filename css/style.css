@@ -148,15 +148,15 @@ body {
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 
 /* Style pour le header */
 .header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 .logo-img {
@@ -164,17 +164,17 @@ body {
   width: 50px;
 }
 
-.icons {
-    max-width: 100%;
-    width: 20px;
-}
-
 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
   align-items: center;
 }
+
+.menu li {
+    margin-left: 20px;
+  }
 
 .menu a {
   margin-right: 20px;
@@ -213,12 +213,12 @@ body {
   display: none;
 }
 
-/* Style pour les balises h1 */
+/* Style corps du texte */
 h1 {
   font-size: 18px;
   font-weight: bold;
   color: black;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -235,6 +235,74 @@ p {
   font-size: 22px;
 }
 
+/* Style pour le formulaire */
+.icon-map {
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .custom-icon {
+    font-size: 18px;
+    color: black;
+  }
+
+form {
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+form span {
+    border: none;
+    background-color: var(--main-bg-color);
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    width: 0px;
+}
+
+form input {
+  border: none;
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  padding: 15px;
+  width: 175px;
+  font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+}
+
+form input::placeholder {
+  color: black;
+}
+
+form button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  padding: 15px 20px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 15px;
+  width: 120px;
+}
+
+.desktop-text {
+  display: inline-block;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+/*Style card */
 .card {
   background-color: white;
   border-radius: 20px;
@@ -322,25 +390,43 @@ p {
 }
 /****** Activités ***********/
 .activites {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-  }
-  
-  .activites section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-    width: 65%;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
 
+.activites section {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 65%;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+/*Media query pour le bureau */
+@media (min-width: 768px) {
+  .desktop-text {
+    display: inline-block; /* Affiche le texte sur le bureau */
+  }
+  .mobile-icon {
+    display: none; /* Masque l'icône sur le bureau */
+  }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 767px) {
+  .desktop-text {
+    display: none; /* Masque le texte sur le mobile */
+  }
+  .mobile-icon {
+    display: inline-block; /* Affiche l'icône sur le mobile */
+  }
+}
+
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
     flex-direction: column;

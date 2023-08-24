@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0f4b50fe4a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,8 +31,8 @@
         <img class="logo-img" src="./images/logo/Booki.png" alt="Logo booki" />
         <nav>
           <ul class="menu">
-            <a href="#hébergements">Hébergements</a>
-            <a href="#Activités">Activités</a>
+            <li><a href="#hébergements">Hébergements</a></li>
+            <li><a href="#Activités">Activités</a></li>
           </ul>
         </nav>
       </header>
@@ -36,11 +40,23 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         <form method="get" action="">
-            <fieldset>
-                <img class="icons" src="./images/map1.svg" alt="map1"/>
-                <input type="search" name="rechercher" id="rechercher" placeholder="ville, pays" size="30" maxlength="100">
-                <button for="site-search">Rechercher</button>
-            </fieldset>
+          <fieldset>
+            <span class="icon-map">
+              <i class="fas fa-map-marker-alt custom-icon"></i>
+            </span>
+            <input
+              type="search"
+              name="rechercher"
+              id="rechercher"
+              placeholder="Marseille, France"
+              size="30"
+              maxlength="100"
+            />
+            <button for="site-search">
+              <span class="desktop-text">Rechercher</span>
+              <span class="mobile-icon"><i class="fas fa-search"></i></span>
+            </button>
+          </fieldset>
         </form>
         <div class="hebergements-and-populaires">
           <section class="hebergements" id="hebergements">
@@ -133,7 +149,7 @@
           </section>
         </div>
         <div class="hebergements-and-populaires">
-          <section class="Activites" id="Activités">
+          <section class="Activites" id="activités">
             <h2 class="section-title">Activités</h2>
           </section>
         </div>
