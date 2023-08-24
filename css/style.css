@@ -173,8 +173,8 @@ body {
 }
 
 .menu li {
-    margin-left: 20px;
-  }
+  margin-left: 20px;
+}
 
 .menu a {
   margin-right: 20px;
@@ -237,15 +237,15 @@ p {
 
 /* Style pour le formulaire */
 .icon-map {
-    padding: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-  }
-  
-  .custom-icon {
-    font-size: 18px;
-    color: black;
-  }
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.custom-icon {
+  font-size: 18px;
+  color: black;
+}
 
 form {
   border: none;
@@ -256,20 +256,20 @@ form {
   display: flex;
   align-items: center;
 }
-form span {
-    border: none;
-    background-color: var(--main-bg-color);
-    border-top: 1px solid var(--main-bg-color);
-    border-bottom: 1px solid var(--main-bg-color);
-    width: 0px;
+form .icon-map {
+  border: none;
+  background-color: var(--main-bg-color);
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  width: 40px;
 }
 
 form input {
   border: none;
   border-top: 1px solid var(--main-bg-color);
   border-bottom: 1px solid var(--main-bg-color);
-  padding: 15px;
-  width: 175px;
+  padding: 15px 0 15px 15px;
+  width: 159px;
   font-weight: bold;
   margin: 0;
   font-size: 16px;
@@ -285,13 +285,16 @@ form button {
   border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  border-top: 1px solid var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  border-top: 1.5px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
   padding: 15px 20px;
   margin: 0;
   font-weight: bold;
   font-size: 15px;
   width: 120px;
+  position: relative;
+    left: -4px;
+    top: -1px;
 }
 
 .desktop-text {
