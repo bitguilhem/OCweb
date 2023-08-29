@@ -95,6 +95,11 @@ a {
 }
 
 /* Style corps du texte */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-size: 18px;
     font-weight: bold;
@@ -200,6 +205,11 @@ form button {
     font-size: 16px;
 }
 
+.button-filter {
+    display: flex;
+    align-items: center;  
+}
+
 .icon-button {
     display: flex;
     align-items: center;
@@ -258,6 +268,7 @@ form button {
 
 .card-title {
     font-size: 16px;
+    margin-top: 10px;
 }
 
 .euro {
@@ -291,7 +302,7 @@ form button {
     display: flex;
 }
 
-.hebergements-card{
+.hebergements-cards{
     display: flex;
     flex-wrap: wrap;
 }
@@ -301,9 +312,11 @@ form button {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 33px;
-    width: calc(33.33% - 10px);
+    width: calc(33.33% - 30px);
     flex-direction: column;
     margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .hebergements-cards img {
@@ -324,21 +337,26 @@ form button {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin: 0;
+    margin: 0px;
 }
 
 .hebergements-cards .card-rating {
+    margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.style-afficher {
+    margin-top: 15px;
 }
 
 .afficher-plus {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -409,37 +427,41 @@ form button {
 }
 
 .recard {
-    flex-basis: calc(25% - 40px);
+    flex-basis: calc(25% - 20px);
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     /* Ajouter une ombre */
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .recard img {
     width: 100%;
-    height: 300px;
-    border-radius: 10px;
+    height: 400px;
     object-fit: cover;
-    padding: 10px;
+    padding: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
 }
 
-.card-title {
+.card-title-activites {
+    justify-content: flex-start;
+    font-weight: bold;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /*style pour le footer*/
-body {
-    margin: 0;
-    padding: 0;
-}
+
 
 footer {
+    font-family: "Raleway", sans-serif;
     background-color: var(--main-bg-color);
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
+
 }
 
 .footer-column {
@@ -448,7 +470,9 @@ footer {
 
 .footer-title {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+
 }
 
 .footer-links {
@@ -459,8 +483,10 @@ footer {
 
 .footer-link {
     margin-bottom: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
