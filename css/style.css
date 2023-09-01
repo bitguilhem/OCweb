@@ -514,19 +514,11 @@ footer {
     .header {
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin: 0px;
     }
 
-    .main1 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    nav ul {
-        width: 100%;
-    }
-
-    nav li {
-        width: 100%;
+    header img {
+        margin-top: 20px;
     }
 
     .menu {
@@ -535,23 +527,49 @@ footer {
         padding-top: 40px;
     }
 
+    nav ul {
+        font-size: 24px;
+    }
+
+    .header-search {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+      }
+    
+    P {
+        font-size: 18px; 
+    }
+
     .filter-buttons {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .button-filter {
-        display: flex;
-        flex-direction: column ;
+        flex-wrap: wrap;
     }
 
     .button-filter button {
         margin-bottom: 10px;
     }
 
+    .info-message {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .hebergements {
@@ -559,21 +577,32 @@ footer {
         margin-top: 50px;
         background-color: white;
         padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
+    .hebergements-title {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+   
     .hebergements-cards {
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .hebergements-cards .card {
         width: 100%;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .populaires-cards {
