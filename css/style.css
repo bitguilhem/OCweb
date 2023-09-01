@@ -287,15 +287,15 @@ form button {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
+    background-color: var(--main-bg-color);
     width: 65%;
+    padding: 30px;
 }
 
 .hebergements-title {
@@ -361,7 +361,9 @@ form button {
 
 /****** Populaires ***********/
 .populaires {
+    background-color: var(--main-bg-color);
     width: 32%;
+    padding: 30px;
 }
 
 .populaires-title {
@@ -504,7 +506,36 @@ footer {
 
 @media (max-width: 1024px) {
 
-    .filter-buttons{
+    .main-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .main1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    nav ul {
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    .menu {
+        align-content: stretch;
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .filter-buttons {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -527,6 +558,7 @@ footer {
         width: 100%;
         margin-top: 50px;
         background-color: white;
+        padding: 0px;
     }
 
     .hebergements-cards {
@@ -536,7 +568,7 @@ footer {
     }
 
     .hebergements-cards .card {
-        width: 80%;
+        width: 100%;
     }
 
     .populaires {
@@ -551,7 +583,7 @@ footer {
     }
 
     .populaires-cards .card {
-        width: 80%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -561,6 +593,35 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .activites-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .activites-card img {
+        max-height: 210px;
+    }
+
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-top: 20px;
+    }
+  
 }
 
 /* Small devices (phones, less than 768px) */
