@@ -1,11 +1,6 @@
-@media (max-width: 1024px) {
-    .desktop-text {
-        display: none;
-    }
+@media (min-width: 768px) and (max-width: 1024px) {
+   
 
-    .mobile-icon {
-        display: inline-block; 
-    }
 
     .main-container {
         width: 100%;
@@ -14,8 +9,8 @@
 
     .header {
         display: flex;
-        flex-direction: column;
-        margin: 0px;
+        flex-direction: row;
+        margin: 20px;
     }
 
     header img {
@@ -59,8 +54,8 @@
     }
 
     form button {
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
     .filter-buttons {
@@ -86,15 +81,14 @@
     }
 
     .hebergements-and-populaires {
-        flex-direction: column-reverse;
-        margin-left: 0px;
-        margin-right: 0px;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .hebergements {
         width: 100%;
         margin-top: 50px;
-        background-color: white;
         padding: 0px;
         margin-left: 0px;
         margin-right: 0px;
@@ -103,35 +97,40 @@
     .hebergements-title {
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 15px;
     }
    
     .hebergements-cards {
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-right: 20px;
         margin-left: 20px;
     }
 
     .hebergements-cards .card {
-        width: 100%;
-        margin-bottom: 0px;
+        width: 30%;
+        margin-bottom: 20px;
         margin-left: 0px;
         margin-right: 0px;
     }
 
+    .style-afficher {
+        margin-bottom: 15px;
+    }
+
     .populaires {
         width: 100%;
-        margin-top: 0px;
+        margin-top: 30px;
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .populaires-cards .card {
-        width: 100%;
+        width: 30%;;
     }
 
     .populaires-cards .card-title {
@@ -150,7 +149,7 @@
 
     .activites-card {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -160,14 +159,16 @@
 
     .footer1 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .footer-column {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 0px;
     }
   
 }
