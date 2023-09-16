@@ -26,10 +26,10 @@
 
     h1 {
         font-size: 24px;
-      }
-    
+    }
+
     P {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     .header-search {
@@ -40,7 +40,7 @@
     form input {
         width: 260px;
         font-size: 22px;
-
+        padding: 15px 0 8px 15px;
     }
 
     form button {
@@ -78,7 +78,7 @@
 
     .hebergements {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 0px;
         padding: 0px;
         margin-left: 0px;
         margin-right: 0px;
@@ -89,7 +89,7 @@
         margin-right: 20px;
         margin-top: 15px;
     }
-   
+
     .hebergements-cards {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -121,7 +121,8 @@
     }
 
     .populaires-cards .card {
-        width: 30%;;
+        width: 30%;
+        ;
     }
 
     .populaires-cards .card-title {
@@ -161,5 +162,5 @@
         width: 100%;
         margin-top: 0px;
     }
-  
+
 }
