@@ -203,6 +203,9 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        margin-left: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .activites-card img {
