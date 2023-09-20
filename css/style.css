@@ -1,18 +1,22 @@
 /* général */
+/* Réinitialisation des styles pour tous les éléments */
 * {
     box-sizing: border-box;
 }
 
+/* Variables CSS pour les couleurs principales */
 :root {
     --main-color: #0065fc;
     --main-bg-color: #f2f2f2;
     --filter-bg-color: #deebff;
 }
 
+/* Utilisation de l'icône FontAwesome avec une couleur personnalisée */
 .fa-solid {
     color: var(--main-color);
 }
 
+/* Mise en forme générale du corps de la page */
 body {
     display: flex;
     justify-content: center;
@@ -32,7 +36,7 @@ a {
     margin-top: 5px;
 }
 
-/* Style pour le header */
+/* Style du conteneur du header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -40,11 +44,15 @@ a {
     padding: 0px;
 }
 
+/* Style du logo */
 .logo-img {
     max-width: 100%;
     width: 80px;
 }
 
+/* Style de la navigation principale */
+
+    /* ... (styles pour la liste) */
 .menu {
     list-style: none;
     font-size: 18px;
@@ -54,10 +62,12 @@ a {
     align-items: center;
 }
 
+    /* ... (styles pour les éléments de la liste) */
 .menu li {
     margin-left: 20px;
 }
 
+/* Liens de navigation */
 .menu a {
     margin-right: 20px;
     text-decoration: none;
@@ -72,7 +82,7 @@ a {
     width: 100%;
     height: 3px;
     background-color: transparent;
-    top: -16px;
+    top: -13px;
     left: 0;
     transition: background-color 0.3s;
 }
@@ -242,20 +252,23 @@ form button {
     margin-bottom: 30px;
 }
 
-.info-message i {
-    font-size: 20px;
-    color: var(--main-color);
+.info-message p {
+    font-size: 14px;
     margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.info-message p {
-    font-size: 14px;
+.info-message p:first-child {
+    color: var(--main-color);
+    border: 2px solid var(--main-bg-color); 
+    border-radius: 50%;
+    padding: 4px 9px 4px 9px;
+    font-family: 'Roboto Mono', monospace;
 }
 
-/*Style card */
+/* Styles pour les cartes d'hébergement */
 .card {
     background-color: white;
     border-radius: 20px;
@@ -318,6 +331,7 @@ form button {
     margin-bottom: 20px;
     margin-left: 15px;
     margin-right: 15px;
+    height: 100%;
 }
 
 .hebergements-cards img {
@@ -328,7 +342,7 @@ form button {
 }
 
 .hebergements-cards .card-content {
-    width: 67%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -378,15 +392,21 @@ form button {
     margin-top: 33px;
 }
 
+.populaires-cards a {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .populaires-cards img {
-    width: 33%;
+    width: 100%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -412,13 +432,13 @@ form button {
 .activites {
     margin-top: 50px;
     border-radius: 20px;
-    padding: 30px;
 }
 
 .activites-title {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
+    padding: 20px;
 }
 
 .activites-card {
@@ -434,13 +454,12 @@ form button {
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    /* Ajouter une ombre */
     border-radius: 20px;
 }
 
 .recard img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     padding: 0px;
     border-top-left-radius: 20px;
@@ -453,11 +472,11 @@ form button {
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
 }
 
 /*style pour le footer*/
-
-
 footer {
     font-family: "Raleway", sans-serif;
     background-color: var(--main-bg-color);

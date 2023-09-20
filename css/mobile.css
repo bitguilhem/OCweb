@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .desktop-text {
         display: none;
     }
@@ -34,11 +34,15 @@
         padding-bottom: 15px;
         margin: 0px;
         position: relative;
-        top: 10px;
+        top: 3px;
     }
 
     .menu li:hover {
         border-color: #0065fc;
+    }
+
+    .menu a {
+        margin-right: 0px;
     }
 
     .menu a::before {
@@ -54,6 +58,7 @@
         width: 100%;
         padding-top: 20px;
         margin-left: 0px;
+        margin: 0px;
     }
 
     .menu a::before {
@@ -132,6 +137,10 @@
         margin-right: 0px;
     }
 
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+
     .hebergements {
         width: 100%;
         margin-top: 50px;
@@ -193,6 +202,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
     }
 
     .activites-card img {

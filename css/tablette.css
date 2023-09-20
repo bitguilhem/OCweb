@@ -1,53 +1,64 @@
+    /* Redimensionnement de la largeur du conteneur principal */
 @media (max-width: 1024px) {
     .main-container {
         width: 100%;
         padding: 0px;
     }
 
+        /* Réorganisation de l'en-tête (header) */
     .header {
         display: flex;
         flex-direction: row;
         margin: 20px;
     }
 
+        /* Ajustement de la marge supérieure de l'image du logo */
     header img {
         margin-top: 20px;
     }
 
+        /* Adaptation du menu principal */
     .menu {
         align-content: stretch;
         width: 100%;
         padding-top: 0px;
     }
 
+        /* Déplacement de la ligne de décoration des liens du menu */
     .menu a::before {
         top: -38px;
     }
 
+        /* Modification de la taille de la police pour les titres */
     h1 {
         font-size: 24px;
     }
 
+        /* Ajustement de la taille de la police pour les paragraphes */
     P {
         font-size: 18px;
     }
 
+        /* Réorganisation de la barre de recherche dans l'en-tête */
     .header-search {
         margin-left: 20px;
         margin-right: 20px;
     }
 
+        /* Modification de la largeur des champs de formulaire */
     form input {
         width: 260px;
         font-size: 22px;
         padding: 15px 0 8px 15px;
     }
 
+    /* Adaptation des coins arrondis du bouton du formulaire */
     form button {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
     }
 
+        /* Réarrangement des boutons de filtrage */
     .filter-buttons {
         display: flex;
         flex-direction: column;
@@ -56,26 +67,31 @@
         margin-right: 20px;
     }
 
+        /* Gestion du retour à la ligne des boutons de filtrage */
     .button-filter {
         flex-wrap: wrap;
     }
 
+        /* Espacement vertical entre les boutons de filtrage */
     .button-filter button {
         margin-bottom: 10px;
     }
 
+        /* Mise en page des messages informatifs */
     .info-message {
         margin-left: 20px;
         margin-right: 20px;
 
     }
 
+        /* Réorganisation des sections "Hébergements" et "Populaires" */
     .hebergements-and-populaires {
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
     }
 
+        /* Modification de la largeur des cartes d'hébergements */
     .hebergements {
         width: 100%;
         margin-top: 0px;
@@ -84,12 +100,14 @@
         margin-right: 0px;
     }
 
+        /* Réglage des marges et de la taille de police pour les titres des hébergements */
     .hebergements-title {
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 15px;
     }
 
+        /* Réarrangement des cartes d'hébergements */
     .hebergements-cards {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -97,6 +115,7 @@
         margin-left: 20px;
     }
 
+        /* Ajustement de la largeur et des marges des cartes d'hébergements */
     .hebergements-cards .card {
         width: 30%;
         margin-bottom: 20px;
@@ -104,27 +123,32 @@
         margin-right: 0px;
     }
 
+        /* Espacement des éléments "Afficher plus" */
     .style-afficher {
         margin-bottom: 15px;
         margin: 20px;
     }
 
+        /* Réorganisation de la section "Populaires" */
     .populaires {
         width: 100%;
         margin-top: 30px;
     }
 
+        /* Réarrangement des cartes "Populaires" */
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
+    
+        /* Ajustement de la largeur des cartes "Populaires" */
     .populaires-cards .card {
         width: 30%;
         ;
     }
 
+    /* Modification de la taille de police pour les titres et sous-titres des cartes "Populaires" */
     .populaires-cards .card-title {
         font-size: 14px;
     }
@@ -133,22 +157,26 @@
         font-size: 13px;
     }
 
+        /* Réorganisation de la section "Activités" */
     .activites {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
+        /* Réarrangement des cartes d'activités */
     .activites-card {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
+        /* Limitation de la hauteur des images d'activités */
     .activites-card img {
         max-height: 210px;
     }
 
+        /* Mise en page du pied de page (footer) */
     .footer1 {
         display: flex;
         flex-direction: row;
@@ -158,6 +186,7 @@
         margin-right: 20px;
     }
 
+        /* Réglage de la largeur de la colonne du pied de page */
     .footer-column {
         width: 100%;
         margin-top: 0px;
